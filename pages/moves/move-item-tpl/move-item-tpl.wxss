@@ -1,0 +1,19 @@
+@import "../star-tpl/star-tpl.wxss";
+.move-item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.move-item-container .move-poster {
+  width: 100%;
+  height: 280rpx;
+  padding-bottom: 15rpx;
+}
+
+.move-item-container .move-item-title {
+  font-size: 30rpx;
+  margin-bottom: 5rpx
+}
+

@@ -1,0 +1,7 @@
+<view class="container">
+    <image src="/assets/imgs/avatar.jpg"></image>
+    <text class="username">Hello, JXB</text>
+    <view class="motto-wrapper" bindtap="onTop">
+      <text class="motto">开始小程序的学习</text>
+    </view>
+</view>

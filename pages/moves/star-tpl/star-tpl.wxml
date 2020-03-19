@@ -1,0 +1,15 @@
+<template name="star">
+  <view class="star-container">
+    <view class="star-list">
+      <block
+        wx:for="{{stars}}"
+        wx:for-item="star"
+        wx:key="star"
+      >
+        <image wx:if="{{star}}" src="/assets/movie-icons/star/stared.png"></image>
+        <image wx:else src="/assets/movie-icons/star/star.png"></image>
+      </block> 
+    </view>  
+    <text class="rating">{{rating}}</text>
+  </view>
+</template>

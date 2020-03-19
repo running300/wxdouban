@@ -1,0 +1,9 @@
+<import src="../star-tpl/star-tpl.wxml" />
+
+<template name="moveItem">
+  <view class="move-item-container" catchtap="onMovieItemTop" data-movieId="{{movieId}}">
+    <image class="move-poster" src="{{coverImg}}"></image>
+    <text class="move-item-title">{{title}}</text>
+    <template is="star" data="{{rating, stars}}"></template>
+  </view>
+</template>

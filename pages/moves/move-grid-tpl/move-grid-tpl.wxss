@@ -1,0 +1,17 @@
+@import "../move-item-tpl/move-item-tpl.wxss";
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.movie-grid-container {
+  height: 1300rpx;
+  margin: 50rpx 0 50rpx 20rpx;
+}
+
+.movie-item {
+  float: left;
+  width: 31%;
+  margin-right: 17rpx;
+}

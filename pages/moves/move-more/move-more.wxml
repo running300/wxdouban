@@ -1,0 +1,3 @@
+<import src="../move-grid-tpl/move-grid-tpl.wxml" />
+
+<template is="moveGrid" data="{{moviesArr}}"></template>

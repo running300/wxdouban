@@ -1,0 +1,48 @@
+<import src="./posts-item-tpl/post-item-tpl.wxml" />
+<view class="posts-wrapper">
+  <swiper 
+    class="posts-swiper" 
+    indicator-dots="true"
+    indicator-active-color="#f4a460"
+    autoplay
+    interval="3000"
+    catchtap="onSwiperTop"
+    >
+    <swiper-item class="post-item">
+      <image 
+        class="post-img" 
+        src="/assets/posts-swiper/post1.jpg" 
+        data-postId="0"
+        bindtap="onSwiperItemTop"
+        ></image>
+    </swiper-item>
+    <swiper-item class="post-item">
+      <image 
+        class="post-img" 
+        src="/assets/posts-swiper/post2.jpg" 
+        data-postId="1"
+        bindtap="onSwiperItemTop"
+      ></image>
+    </swiper-item>
+    <swiper-item class="post-item">
+      <image 
+        class="post-img" 
+        src="/assets/posts-swiper/post3.jpg" 
+        data-postId="2"
+        bindtap="onSwiperItemTop"
+      ></image>
+    </swiper-item>
+  </swiper>
+  <view class="post-list">
+    <block 
+      wx:for="{{postDataList}}"
+      wx:for-item = "item"
+      wx:for-index = "idx"
+      wx:key = "idx"
+    >
+      <view catchtap="onItemTop" data-id="{{item.id}}">
+        <template is="postItem" data="{{...item}}"/>
+      </view>
+    </block>  
+  </view>
+</view>

@@ -1,0 +1,11 @@
+@import "move-list-tpl/move-list-tpl.wxss";
+
+.container {
+  background-color: #f4f4f4;
+}
+
+.move-list-tpl {
+  margin-bottom: 30rpx;
+}
+
+

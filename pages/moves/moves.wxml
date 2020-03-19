@@ -1,0 +1,17 @@
+<!--pages/moves/moves.wxml-->
+<import src="./move-list-tpl/move-list-tpl.wxml" />
+
+<view class="container">
+  <view class="move-list-tpl">
+    <template is="moveList" data="{{...in_theaters}}"></template>
+  </view>
+  <view>
+    <template is="moveList" class="move-list-tpl" data="{{...coming_soon}}"></template>
+  </view>
+  <view>
+     <template is="moveList" class="move-list-tpl" data="{{...top250}}"></template>
+  </view>
+ 
+</view>
+
+

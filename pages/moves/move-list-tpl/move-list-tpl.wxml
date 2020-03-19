@@ -1,0 +1,21 @@
+<import src="../move-item-tpl/move-item-tpl.wxml"/>
+
+<template name="moveList">
+  <view class="move-list">
+    <view class="inner-container">
+      <view class="move-header">
+        <text>{{ categoryTitle}}</text>
+        <text class="more" catchtap="onMoreTop" data-category="{{categoryTitle}}">更多</text>
+      </view>
+      <view class="move-content">
+        <block 
+          wx:for="{{moviesArr}}"
+          wx:for-item="movieItem"
+          wx:key="movies"
+        >
+          <template is="moveItem" data="{{...movieItem}}"></template>
+        </block>
+      </view>
+    </view> 
+  </view>
+</template>

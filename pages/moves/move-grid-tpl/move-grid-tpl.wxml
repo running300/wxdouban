@@ -1,0 +1,21 @@
+<import src="../move-item-tpl/move-item-tpl.wxml"/>
+<template name="moveGrid">
+  <scroll-view 
+    class="movie-grid-container .clearfix"
+    scroll-x="false"
+    scroll-y="true"
+    bindscrolltolower="onScrollTolower"
+  >
+    <block
+      wx:for="{{moviesArr}}"
+      wx:for-item="movie"
+      wx:key="movie"
+    >
+      <view class="movie-item">
+        <template is="moveItem" data="{{...movie}}"></template>
+      </view>
+      
+    </block>
+  </scroll-view>
+  
+</template>

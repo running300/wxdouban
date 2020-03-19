@@ -1,14 +1,36 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/welcome/index",
+    "pages/posts/posts",
+    "pages/posts/post-detail/post-detail",
+    "pages/logs/index",
+    "pages/moves/moves",
+    "pages/moves/move-more/move-more",
+    "pages/moves/move-detail/move-detail"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#f4a460"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap19.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "文章",
+        "iconPath": "/assets/tab/article_o.png",
+        "selectedIconPath": "/assets/tab/article.png"
+      },
+      {
+        "pagePath": "pages/moves/moves",
+        "text": "电影",
+        "iconPath": "/assets/tab/move_o.png",
+        "selectedIconPath": "/assets/tab/move.png"
+      }
+    ],
+    "color": "#515151",
+    "selectedColor": "#1296db"
+  }
 }

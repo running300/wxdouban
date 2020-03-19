@@ -1,0 +1,32 @@
+<!--pages/posts/post-detail/post-detail.wxml-->
+<view class="container">
+  <image class="poster" src="{{postDetail.post_img}}"></image>
+  <image 
+    class="audio-btn" 
+    src="{{isPlaying ? '/assets/post-icons/stop.png' :'/assets/post-icons/play.png'}}"
+    catchtap="onAudioTop"
+  ></image>
+  <view class="news-info">
+    <image class="avatar" src="{{postDetail.avatar}}"></image>
+    <text class="author">原创: {{postDetail.author}}</text>
+    <text class="date">{{postDetail.time}}</text>
+  </view>
+  <text>{{postDetail.title}}最佳影评</text>
+  <view class="news-icons">
+    <image  
+      src="../../../assets/post-icons/fx.png"
+      catchtap="onShareTop"
+    ></image>
+    <image 
+      wx:if="{{!isCollect}}" 
+      src="../../../assets/post-icons/sc.png"
+      catchtap="onColletTop"
+    ></image>
+    <image 
+      wx:else 
+      src="../../../assets/post-icons/scs.png" 
+      catchtap="onColletTop"
+    ></image>
+  </view>
+  <text class="desc">{{postDetail.desc}}</text>
+</view>

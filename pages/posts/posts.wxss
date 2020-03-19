@@ -1,0 +1,15 @@
+@import './posts-item-tpl/post-item-tpl.wxss';
+.posts-swiper {
+  width: 100%;
+  height: 400rpx;
+}
+
+.posts-swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+}

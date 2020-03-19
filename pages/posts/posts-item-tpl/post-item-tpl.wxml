@@ -1,0 +1,19 @@
+<template name="postItem">
+  <view class="post-item"> 
+    <view class="user-info">
+      <image class="user-avatar" src="{{avatar}}"></image>
+      <text class="news-date">{{date}}</text>
+    </view>
+    <view class="post-title">
+      <text >{{title}}</text>
+    </view>
+    <image class="post-pic" src="{{post_img}}"></image>
+    <text class="post-desc">{{desc}}</text>
+    <view class="post-info">
+      <image class="post-fav" src="/assets/post-icons/fav.jpg" ></image>
+      <text>{{fav_num}}</text>
+      <image class="post-watched" src="/assets/post-icons/watched.jpg"></image>
+      <text>{{watched_num}}</text>
+    </view>
+  </view>
+</template>
